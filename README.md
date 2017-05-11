@@ -8,12 +8,12 @@ NGP是基于NXT开发的区块链系统，公链发行，使用NGP区块链，�
 
 ----
 ## Get it! ##
+
   - *dependencies*:
     - *general* - Java 8
     - *Ubuntu* - `http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html`
     - *Debian* - `http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html`
     - *FreeBSD* - `pkg install openjdk8`
-
 
   - *repository* - `git clone https://github.com/slaxman/ngp.git`
   

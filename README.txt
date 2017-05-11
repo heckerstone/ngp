@@ -8,10 +8,7 @@ Using the installer:
 
 An IzPack based installation package is provided. Click on the corresponding
 jar/exe/dmg package, or run "java -jar ngp-client.jar" to start the
-installer. See https://bitbucket.org/JeanLucPicard/ngp/issues/283 for more
-details about the IzPack installer. After installation, use the shortcuts or
-desktop icons to start the Ngp server.
-
+installer. 
 
 Using the ngp-client.zip package:
 
