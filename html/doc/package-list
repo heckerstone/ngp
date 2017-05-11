@@ -1,0 +1,12 @@
+ngp
+ngp.addons
+ngp.crypto
+ngp.db
+ngp.env
+ngp.env.service
+ngp.http
+ngp.mint
+ngp.peer
+ngp.tools
+ngp.user
+ngp.util
