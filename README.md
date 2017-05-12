@@ -20,51 +20,33 @@ NGP是基于NXT开发的区块链系统，公链发行，使用NGP区块链，�
     `git clone https://github.com/slaxman/ngp.git`
   
 ----
-## 运行! ##
 
-  - click on the Ngp icon, or start from the command line:
-  - Unix: `./start.sh`
-  - Mac: `./run.command`
+## 编译  ##
+	进入NGP目录，下载程序包含已编译的程序，如果需要，可以重新编译
+	cd <ngp_dir>
+	./compile.sh
+	
+## 运行! ##
+	在NGP目录中
+  - Unix: `./start.sh` (后台运行） 或者 `./run.sh` （前台运行，Ctl+C可终止）
+  - Mac: `./start.sh`(启动桌面程序） ，或者 `./run.sh`（前台运行， Ctl+C可终止）
   - Window: `run.bat`
 
-  - wait for the JavaFX wallet window to open
-  - on platforms without JavaFX, open http://localhost:7877/ in a browser
+  - 等待JavaFX程序打开，即可登录
+  - 如果您的机器没有JavaFX环境，可以用任何浏览器打开地址 `http://localhost:7877/`
 
 ----
-## Compile it! ##
-
-  - if necessary with: `./compile.sh`
-  - you need jdk-8 as well
-
+## 改动说明 ##
+	- NXT到NGP
+	- 新的创世块
+	- 修改了每个块的交易数量最大为512个
+ 	- 锻造时间大概2-30秒
+	- block和transaction的版本修改为3，因为是全新的数据链
+	- HTTP接口请求增加了RSA公私钥加解密机制
+	
 ----
-## Improve it! ##
 
-  - we love **pull requests**
-  - we love issues (resolved ones actually ;-) )
-  - in any case, make sure you leave **your ideas** at BitBucket
-  - assist others on the issue tracker
-  - **review** existing code and pull requests
-  - cf. coding guidelines in DEVELOPERS-GUIDE.md
-
-----
-## Troubleshooting the NRS (Ngp Reference Software) ##
-
-  - How to Stop the NRS Server?
-    - click on Ngp Stop icon, or run `./stop.sh`
-    - or if started from command line, ctrl+c or close the console window
-
-  - UI Errors or Stacktraces?
-    - report on BitBucket
-
-  - Permissions Denied?
-    - no spaces and only latin characters in the path to the NRS installation directory
-    - known jetty issue
-
-----
-## Further Reading ##
-
-  - in this repository:
+## 其它 ##
     - USERS-GUIDE.md
     - DEVELOPERS-GUIDE.md
     - OPERATORS-GUIDE.md
-    
