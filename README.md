@@ -1,24 +1,26 @@
 ----
-# Welcome to Ngp! 欢迎使用NGP！#
+#欢迎使用NGP！#
 
 ----
-## What is Ngp? ##
+## Ngp 是什么 ##
 NGP是基于NXT开发的区块链系统，公链发行，使用NGP区块链，你可以基于此平台开发自己的业务系统，如ICO、P2P等业务平台。
 更多信息请访问： http://www.ydwan.com
 
 ----
-## Get it! ##
+## 必备条件 ##
+	NGP 是基于Java 8开发的，所以需要Java8的开发环境，至少需要一个JRE8的运行环境
 
-  - *dependencies*:
-    - *general* - Java 8
+    - *一般情况* - Java 8
     - *Ubuntu* - `http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html`
     - *Debian* - `http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html`
     - *FreeBSD* - `pkg install openjdk8`
+    - *CentOS  - `yum install java-1.8.0-openjdk.x86_64 java-1.8.0-openjdk-devel.x86_64`
 
-  - *repository* - `git clone https://github.com/slaxman/ngp.git`
+## *源码获取*  ##
+    `git clone https://github.com/slaxman/ngp.git`
   
 ----
-## Run it! ##
+## 运行! ##
 
   - click on the Ngp icon, or start from the command line:
   - Unix: `./start.sh`
