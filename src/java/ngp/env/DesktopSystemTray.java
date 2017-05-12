@@ -64,22 +64,22 @@ public class DesktopSystemTray {
         trayIcon.setImageAutoSize(true);
         tray = SystemTray.getSystemTray();
 
-        MenuItem shutdown = new MenuItem("Shutdown");
-        openWalletInBrowser = new MenuItem("Open Wallet in Browser");
+        MenuItem shutdown = new MenuItem("退出");
+        openWalletInBrowser = new MenuItem("用浏览器打开");
         if (!Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
             openWalletInBrowser.setEnabled(false);
         }
-        MenuItem showDesktopApplication = new MenuItem("Show Desktop Application");
-        MenuItem refreshDesktopApplication = new MenuItem("Refresh Wallet");
+        MenuItem showDesktopApplication = new MenuItem("显示桌面程序");
+        MenuItem refreshDesktopApplication = new MenuItem("刷新");
         if (!NGP.isDesktopApplicationEnabled()) {
             showDesktopApplication.setEnabled(false);
             refreshDesktopApplication.setEnabled(false);
         }
-        viewLog = new MenuItem("View Log File");
+        viewLog = new MenuItem("查看日志文件");
         if (!Desktop.getDesktop().isSupported(Desktop.Action.OPEN)) {
             viewLog.setEnabled(false);
         }
-        MenuItem status = new MenuItem("Status");
+        MenuItem status = new MenuItem("状态");
 
         popup.add(status);
         popup.add(viewLog);
@@ -136,8 +136,8 @@ public class DesktopSystemTray {
 
         shutdown.addActionListener(e -> {
             if(JOptionPane.showConfirmDialog (null,
-                    "Sure you want to shutdown NGP?\n\nIf you do, this will stop forging, shufflers and account monitors.\n\n",
-                    "Shutdown",
+                    "确认要退出NGP吗？将会停止锻造、混币、账户监控等\n\n",
+                    "退出",
                     JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
                 Logger.logInfoMessage("Shutdown requested by System Tray");
                 System.exit(0); // Implicitly invokes shutdown using the shutdown hook
