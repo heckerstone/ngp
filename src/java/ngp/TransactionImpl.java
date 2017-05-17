@@ -969,8 +969,7 @@ final class TransactionImpl implements Transaction {
     @Override
     public void validate() throws NgpException.ValidationException {
     	// feeNQT <= 0 update
-//        if (timestamp == 0 ? (deadline != 0 || feeNQT != 0) : (deadline < 1 || feeNQT <= 0)
-    	if (timestamp == 0 ? (deadline != 0 || feeNQT != 0) : (deadline < 1 || feeNQT < 0)
+        if (timestamp == 0 ? (deadline != 0 || feeNQT != 0) : (deadline < 1 || feeNQT <= 0)
                 || feeNQT > Constants.MAX_BALANCE_NQT
                 || amountNQT < 0
                 || amountNQT > Constants.MAX_BALANCE_NQT
