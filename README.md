@@ -4,7 +4,7 @@
 ----
 ## Ngp 是什么 ##
 NGP是基于NXT开发的区块链系统，公链发行，使用NGP区块链，你可以基于此平台开发自己的业务系统，如ICO、P2P等业务平台。
-更多信息请访问： http://www.ydwan.com
+更多信息请访问： http://blockchain.ydwan.com
 
 ----
 ## 必备条件 ##
